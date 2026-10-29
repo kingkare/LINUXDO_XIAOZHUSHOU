@@ -2,9 +2,9 @@
 
 Android 上的多站点管理工具。把中转站账号、签到、余额、模型、令牌、聊天、本地网关、SSH、LINUX.DO 和短剧放进一个 APP 里。
 
-最新版 **0.32.168**（2026-10-24），Android 8.0 及以上，只支持 ARM64，安装包约 96 MiB。
+最新版 **0.32.169**（2026-10-29），Android 8.0 及以上，只支持 ARM64，安装包约 96.23 MiB。
 
-- [下载 APK](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.168/LINUXDO_XIAOZHUSHOU-v0.32.168.apk)
+- [下载 APK](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/download/v0.32.169/LINUXDO_XIAOZHUSHOU-v0.32.169.apk)
 - [查看最新版本](https://github.com/aweijll/LINUXDO_XIAOZHUSHOU/releases/latest)
 - [校验下载](docs/VERIFY_DOWNLOAD.md)
 
@@ -12,12 +12,8 @@ Android 上的多站点管理工具。把中转站账号、签到、余额、模
 
 ## 这次更新
 
-- 「AI 帮你签」升级到 V2：自动签到优先走本地接口和已有会话，登录失效自动续期；需要登录、首次授权、验证码或 Cloudflare 验证时，在同一浏览器人工操作一次，完成后自动记录并生成脚本，下次零模型回放。
-- 新增加密会话快照：保存各站点 Cookie、cf_clearance、UA 与登录令牌，登录成功立即保存；非 LinuxDO 登录也可手动一次后长期复用，不保存密码。
-- Cloudflare 盾增强：自动等待非交互验证、复用 clearance、验证阶段全局串行；交互式验证仍需人工点一次，不做破解。
-- 新增人工示范学习与脚本管理：手动完成签到一次即可编译成脚本，可查看、删除、回滚；脚本失效会自动 AI 修复。
-- 签到核验升级：适配器状态、页面签到接口响应、页面状态三重证据；结果不明保留当天保护，不重复提交。
-- 自动签到站点先走本地接口，零浏览器零模型；任务报告显示阶段、模型调用次数和失败原因。
+- 修复红果短剧匿名设备播放链路：按网页播放模型、匿名 App 播放模型、备用接口顺序解析，首集与末集播放地址验证通过。
+- 删除首页“AI帮你签-测试”入口，焚绝-极限白嫖按钮恢复单独一行显示。
 
 ## 之前几版
 
